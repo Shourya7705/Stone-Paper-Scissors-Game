@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Stone Paper Scissors Game</title>
+    <link rel="stylesheet" href="Game.css">
+</head>
+
+<body>
+    <div style="height: 100px;background-color:rgb(220, 53, 69);">
+        <h1 style="font-size:50px; color:whitesmoke;text-align: center;margin: auto;padding-top: 20px;">
+            Stone Paper Scissors Game</h1>
+    </div>
+    <div class="score">
+        <div class="badge" id="user_badge">You</div>
+        <div class="badge" id="comp_badge">Comp</div>
+        <span id="user_score">0</span>:<span id="comp_score">0</span>
+    </div>
+    <div id="div">
+        <div id="div1">
+            <div class="button_area">
+                <div id="btn1" class="button" onclick="stone()" style="margin-left: 20px;"><img class="images"
+                        src="rock.jpeg" alt=""></div>
+            </div>
+            <div class="button_area">
+                <div id="btn2" class="button" onclick="paper()" style="margin-left: 20px;"><img class="images"
+                        src="paper.jpeg" alt=""></div>
+            </div>
+            <div class="button_area">
+                <div id="btn3" class="button" onclick="scissors()" style="margin-left: 20px;"><img class="images"
+                        src="scissors.jpeg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <p id="you_choose" style="margin-left: 20px; font-size:x-large; color: azure"></p>
+            <p id="comp_choose" style="margin-left: 20px; font-size:x-large; color: azure"></p>
+            <p align="center" id="result" style="margin-left: 20px; font-size:50px; color: azure;"></p>
+        </div>
+        <center>
+            <div id="reset" onclick="reset()">Reset</div>
+        </center>
+
+</body>
+<script src="Game.js"></script>
+
+</html>
